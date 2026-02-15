@@ -136,3 +136,98 @@ body::before {
   position: relative;
   z-index: 2;
 }
+
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 70px;
+  padding: 10px;
+  margin: 16px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.tabBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+
+.tabBtn:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+.tabBtn.active {
+  background: rgba(46, 213, 245, 0.14);
+  border-color: rgba(46, 213, 245, 0.25);
+  box-shadow: 0 0 18px rgba(46, 213, 245, 0.18);
+}
+
+.tabIcon {
+  font-size: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px 24px;
+}
+
+.panel {
+  padding: 20px;
+  max-width: 700px;
+}
+
+.subTabRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.subTab {
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+
+.subTab:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+.subTab.active {
+  background: rgba(46, 213, 245, 0.14);
+  border-color: rgba(46, 213, 245, 0.25);
+  box-shadow: 0 0 18px rgba(46, 213, 245, 0.14);
+}
+
+.subContent {
+  margin-top: 16px;
+}
+
+.innerPanel {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 16px;
+}
